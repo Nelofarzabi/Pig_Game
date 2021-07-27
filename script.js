@@ -1,7 +1,7 @@
 
-var scors , activePlayer , dice , roundScor ; 
+var scors , activePlayer  , roundScor ; 
 scors = [0 , 0];
-activePlayer = 1 ;
+activePlayer = 0 ;
 roundScor = 0;
 // three commint
 //
@@ -24,7 +24,15 @@ document.querySelector('.btn--roll').addEventListener('click' , function(){
     var diceDom = document.querySelector('.dice');
     diceDom.style.display='block';
     diceDom.src='dice-' + dice + '.png';
-    
+    if (dice !== 1){
+   roundScor += dice ;
+   document.querySelector('#current--' + activePlayer).textContent = roundScor;
+    }
+    else {
+        activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+        roundScor = 0;
+    }
+
   
 
 })
