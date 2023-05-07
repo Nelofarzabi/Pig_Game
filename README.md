@@ -43,4 +43,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is 
-[licensed](https://github.com/samuelmoiwa/Microverse-Student-Profile-grid/blob/profile_mobile_design/MIT.md) .
+[licensed]() .
